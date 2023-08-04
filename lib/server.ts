@@ -42,7 +42,7 @@ exports.init = async function () {
 
 exports.start = async function () {
   try {
-    const server = new Server();
+    const server = await Server();
     await server.start();
 
     return server;
